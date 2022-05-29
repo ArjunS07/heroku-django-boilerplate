@@ -23,7 +23,7 @@ import os
 SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = os.environ.get('DEBUG', False)
 ALLOWED_HOSTS = [
-    "https://quiet-lake-44694.herokuapp.com/"
+    '*'
 ]
 
 
