@@ -20,11 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 import os
-import environ
-environ.Env.read_env()
 SECRET_KEY = os.environ['SECRET_KEY']
-DEBUG = os.environ['DEBUG']
+DEBUG = os.environ.get('DEBUG', False)
 ALLOWED_HOSTS = [
+    "herokuapp.com",
 
 ]
 
