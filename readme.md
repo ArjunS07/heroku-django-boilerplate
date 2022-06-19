@@ -55,6 +55,8 @@ a. Run @[FredPerr](github.com/FredPerr)'s [script](https://github.com/FredPerr/d
 
 b. Manually rename the the `heroku_django_boilerplate` root folder
 
+At this stage, you might run into an `ImportError: Couldn't import Django`. Try deactivating your pipenv, deleting your `Pipfile.lock`, reactivating your pipenv, and reinstalling your dependencies. 
+
 8. Update the `Procfile`:
 `web: gunicorn PROJECT_NAME.wsgi`
 
