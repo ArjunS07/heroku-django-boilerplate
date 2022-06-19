@@ -50,20 +50,18 @@ You need to have the following installed on your system:
 
 7. Rename the project:
 
-a. Run @[FredPerr](github.com/FredPerr)'s [script](https://github.com/FredPerr/django_super/blob/main/rename-project.py) (also included in this project) to rename most instances of the project name.
-`python rename-project.py PROJECT_NAME`
+    1. Run @[FredPerr](github.com/FredPerr)'s [script](https://github.com/FredPerr/django_super/blob/main/rename-project.py) (also included in this       project) to rename most instances of the project name.
+    
+    `python rename-project.py PROJECT_NAME`
 
-b. Manually rename the the `heroku_django_boilerplate` root folder
+    2. Manually rename the the `heroku_django_boilerplate` root folder
 
-At this stage, you might run into an `ImportError: Couldn't import Django`. Try deactivating your pipenv, deleting your `Pipfile.lock`, reactivating your pipenv, and reinstalling your dependencies. 
+    At this stage, you might run into an `ImportError: Couldn't import Django`. Try deactivating your pipenv, deleting your `Pipfile.lock`, reactivating your pipenv, and reinstalling your dependencies. 
 
 8. Update the `Procfile`:
 `web: gunicorn PROJECT_NAME.wsgi`
 
-9. Update your secret key
-`echo "SECRET_KEY=$(openssl rand -base64 32)" > .env`
-
-10. Test the local heroku server
+9. Test the local heroku server
 `heroku local` or `heroku local web`
 
 ### Deployment
