@@ -20,8 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 import os
-SECRET_KEY = os.environ['SECRET_KEY']
-DEBUG = os.environ.get('DEBUG', False)
+from dotenv import load_dotenv
+load_dotenv()
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG', False)
 ALLOWED_HOSTS = [
     '*'
 ]
