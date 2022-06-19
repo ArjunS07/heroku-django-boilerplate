@@ -33,21 +33,26 @@ You need to have the following installed on your system:
 `cd template`
 
 3. Install dependencies from the Pipfile
+
 `pipenv install`
 
 4. Activate the pipenv virtual environment
+
 `pipenv shell`
 
 5. Update your environment variables in your `.env` file:
+    1. Create a file called `.env` in the root directory
     1. Run `echo "SECRET_KEY=$(openssl rand -base64 32)" > .env` in the same directory as the `.env` file
-    2. Open the file and set `DEBUG=True` in a new line
+    2. Open the `.env` file and set `DEBUG=True` in a new line
 
 6. Test the local django server
 `python manage.py runserver`
 
 7. Rename the project:
+
 a. Run @[FredPerr](github.com/FredPerr)'s [script](https://github.com/FredPerr/django_super/blob/main/rename-project.py) (also included in this project) to rename most instances of the project name.
 `python rename-project.py PROJECT_NAME`
+
 b. Manually rename the the `heroku_django_boilerplate` root folder
 
 8. Update the `Procfile`:
