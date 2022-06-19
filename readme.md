@@ -26,8 +26,7 @@ You need to have the following installed on your system:
 * Heroku CLI
 
 ### Preparing for deployment
-1. Clone this repository:
-`git clone TODO`
+1. Click 'use this template' at the top right of this repository. Follow the steps as as described [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 2. Navigate into the template folder
 `cd template`
