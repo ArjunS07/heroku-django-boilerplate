@@ -39,10 +39,10 @@ You need to have the following installed on your system:
 `pipenv shell`
 
 5. Update your environment variables in your `.env` file:
-    1. Create a file called `.env` in the root directory
-    1. Run `echo "SECRET_KEY=$(openssl rand -base64 32)" > .env` in the same directory as the `.env` file
-    2. Open the `.env` file and set `DEBUG=True` in a new line
-
+    1. `touch .env`
+    2. `echo "SECRET_KEY=$(openssl rand -base64 32)" >> .env`
+    3. 'echo "DEBUG=True" >> .env`
+  
 6. Test the local django server
 `python manage.py runserver`
 
